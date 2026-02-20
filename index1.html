@@ -1,0 +1,94 @@
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+	<title>TranslateKhak</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="d-flex flex-column flex-md-row align-items-center pt-2 pb-2 mb-4 container"> <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        !logo!<span class="logo">TranslateKhak</span>
+      </a>
+			<nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a class="me-3 py-2 text-dark text-decoration-none" href="mailto:translate.khakas@gmail.com" target="_blank">translate.khakas@gmail.com</a> <a class="me-3 py-2 text-dark text-decoration-none" href="https://vk.com/translate_khakas" target="_blank">VK</a> </nav>
+		</div>
+	</header>
+	<div class="mobile_keyboard text-center" style="display: none;">
+		<div class="char">ғ</div>
+		<div class="char">і</div>
+		<div class="char">ң</div>
+		<div class="char">ӧ</div>
+		<div class="char">ӱ</div>
+		<div class="char">ҷ</div>
+		<div class="close">ᐯ</div>
+	</div>
+	<div class="container py-3">
+		<main>
+			<div class="container text-center my-5 py-5">
+				<div class="row">
+					<div class="col"><span class="tr-to" data-lg="ru">Русский</span></div>
+					<div class="col swap-container">
+						<div class="swap">
+							<svg class="icn icn_swap" width="16px" height="16px">
+								<use xlink:href="#icn-swap">
+									<g stroke="none" id="icn-swap">
+										<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M11.8001 0.603196C11.4705 0.355842 11 0.591013 11 1.0031V3.00273H1C0.447715 3.00273 0 3.45044 0 4.00273C0 4.55501 0.447716 5.00273 1 5.00273H11V7.00235C11 7.41444 11.4705 7.64962 11.8001 7.40226L15.7971 4.40264C16.0636 4.20263 16.0636 3.80282 15.7971 3.60282L11.8001 0.603196ZM5 13.0027V15.0024C5 15.4145 4.52948 15.6496 4.19988 15.4023L0.20288 12.4027C-0.0636268 12.2027 -0.0636266 11.8028 0.20288 11.6028L4.19988 8.60319C4.52948 8.35584 5 8.59101 5 9.0031V11.0027H15C15.5523 11.0027 16 11.4505 16 12.0027C16 12.555 15.5523 13.0027 15 13.0027H5Z"></path>
+									</g>
+								</use>
+							</svg>
+						</div>
+					</div>
+					<div class="col"><span class="tr-to" data-lg="kh">Хакасский</span></div>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2 mb-2 text-center">
+					<div class="col mb-3">
+						<div class="clear" style="display: none;">
+							<svg class="icn icn_clear" width="24px" height="24px">
+								<use xlink:href="#icn-clear">
+									<g stroke="none" id="icn-clear">
+										<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M19.2071 6.20711C19.5976 5.81658 19.5976 5.18342 19.2071 4.79289C18.8166 4.40237 18.1834 4.40237 17.7929 4.79289L12 10.5858L6.20711 4.79289C5.81658 4.40237 5.18342 4.40237 4.79289 4.79289C4.40237 5.18342 4.40237 5.81658 4.79289 6.20711L10.5858 12L4.79289 17.7929C4.40237 18.1834 4.40237 18.8166 4.79289 19.2071C5.18342 19.5976 5.81658 19.5976 6.20711 19.2071L12 13.4142L17.7929 19.2071C18.1834 19.5976 18.8166 19.5976 19.2071 19.2071C19.5976 18.8166 19.5976 18.1834 19.2071 17.7929L13.4142 12L19.2071 6.20711Z"></path>
+									</g>
+								</use>
+							</svg>
+						</div>
+						<textarea class="words" id="first" placeholder="Начните писать текст"></textarea>
+						<div class="keyboard" style="display: none;">
+							<div class="char">ғ</div>
+							<div class="char">і</div>
+							<div class="char">ң</div>
+							<div class="char">ӧ</div>
+							<div class="char">ӱ</div>
+							<div class="char">ҷ</div>
+						</div>
+						<div class="counter"></div>
+					</div>
+					<div class="col mb-3">
+						<div class="copy" style="display: none;">
+							<svg class="icn icn_clear" width="24px" height="24px">
+								<use xlink:href="#icn-copy">
+									<g stroke="none" id="icn-copy">
+										<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M8 5H10H15.7951C16.9095 5 17.3137 5.11603 17.7211 5.33392C18.1285 5.5518 18.4482 5.87154 18.6661 6.27894C18.884 6.68635 19 7.09046 19 8.20486V16C19 16.5523 19.4477 17 20 17C20.5523 17 21 16.5523 21 16V8.12777C21 6.34473 20.8143 5.69816 20.4657 5.04631C20.1171 4.39446 19.6055 3.88288 18.9537 3.53427C18.3018 3.18565 17.6553 3 15.8722 3H10H8C7.44772 3 7 3.44772 7 4C7 4.55228 7.44772 5 8 5ZM15.7211 7.33392C15.3136 7.11603 14.9095 7 13.7951 7H6.20486C5.09046 7 4.68635 7.11603 4.27894 7.33392C3.87154 7.5518 3.5518 7.87154 3.33392 8.27894C3.11603 8.68635 3 9.09046 3 10.2049V17.7951C3 18.9095 3.11603 19.3137 3.33392 19.7211C3.5518 20.1285 3.87154 20.4482 4.27894 20.6661C4.68635 20.884 5.09046 21 6.20486 21H13.7951C14.9095 21 15.3136 20.884 15.7211 20.6661C16.1285 20.4482 16.4482 20.1285 16.6661 19.7211C16.884 19.3137 17 18.9095 17 17.7951V10.2049C17 9.09046 16.884 8.68635 16.6661 8.27894C16.4482 7.87154 16.1285 7.5518 15.7211 7.33392Z"></path>
+									</g>
+								</use>
+							</svg>
+						</div>
+						<textarea class="words" id="second" placeholder="Тут отобразится перевод" disabled></textarea>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<style>
+	!styles!
+	</style>
+	<script>
+	!jsapp!
+	</script>
+</body>
+
+</html>

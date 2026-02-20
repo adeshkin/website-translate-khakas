@@ -1,0 +1,182 @@
+html{
+  height: 100%;
+}
+
+body{
+  background: url("data:image/svg+xml,!back!");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header{
+  box-shadow: 0px -3px 21px rgba(0, 0, 0, 0.15);
+}
+
+.logo{
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.lg{
+  border-radius: 10px 10px 0px 0px;
+  background: #fff;
+  box-shadow: 1px 1px 10px 1px #33333354;
+}
+
+.tr-to{
+  padding: 5px;
+  margin-bottom: 2px;
+}
+
+.words{
+  width: 100%;
+  overflow: hidden;
+  border: 0;
+  outline: none;
+  -moz-appearance: none;
+  resize: none;
+  box-shadow: 1px 1px 10px 1px #33333354;
+  border-radius: 10px 10px 10px 10px;
+  min-height: 180px;
+  padding: 20px;
+  -webkit-appearance: none;
+}
+
+.swap-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.swap {
+  cursor: pointer;
+  width: 35px;
+  height: 30px;
+  border-radius: 20px;
+}
+
+.swap:hover, .clear:hover, .copy:hover{
+  transition: 0.5s;
+  background: #e7e7e78c;
+}
+
+.col {
+  position: relative;
+}
+
+.clear, .copy{
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  width: 32px;
+  cursor: pointer;
+  height: 32px;
+  border-radius: 42px;
+}
+
+.char {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 5px 1px #33333354;
+  margin-inline: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  background: white!important;
+}
+
+
+.char:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px 5px 1px #333333a1;
+}
+
+
+.counter{
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  color: #acacac;
+}
+
+.close{
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 5px 1px #33333354;
+  margin-inline: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+  background: white!important;
+}
+
+
+.examples, .dictionary{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.label{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.keyboard{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.mobile_keyboard {
+  position: fixed;
+  transform: translate3d(0,0,0);
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  z-index: 1000;
+}
+
+
+.text{
+  text-align: initial;
+}
+
+footer 
+{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background:#000;
+}
+
+#second{
+  background: #f7f7f7;
+}
+
+.icn_swap{
+  margin-top:6px;
+}
