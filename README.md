@@ -39,7 +39,7 @@ A web-based translation application for the Khakas language (Khakas ↔ Russian)
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/website-translate-khakas.git
+    git clone https://github.com/adeshkin/website-translate-khakas.git
     cd website-translate-khakas
     ```
 
